@@ -15,7 +15,7 @@ int next(int i) {
     printf("inc (call stack- lifetime: function end) location: %p\n", &inc);
     static int j = 2;
     printf("j (static- lifetime: program end) location: %p\n", &j);
-    printf("i (call stack - lifetime: program end) location: %p\n", &i);
+    printf("i (call stack - lifetime: function end) location: %p\n", &i);
 
     return i + inc + j;
 }
